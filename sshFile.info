@@ -1,0 +1,4 @@
+    inet 127.0.0.1/8 scope host lo
+    inet 10.11.100.97/16 brd 10.11.255.255 scope global dynamic noprefixroute enp0s3
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-04468b168593
