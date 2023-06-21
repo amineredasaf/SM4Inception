@@ -29,7 +29,11 @@ sudo apt-get -y update && echo -e "- ${BGreen}[OK] Updated${NC}"
 echo -e "${BYellow}"
 sudo apt-get -y upgrade && echo -e "- ${BGreen}[OK] Upgraded${NC}\n"
 sudo apt-get -y install zsh docker.io curl make vim git nodejs npm >> log.info
-// sudo mkdir /home/rsaf/data /home/rsaf/data/wp_files /home/rsaf/data/wp_database
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+#> to install nestjs
+# npm i -g @nestjs/cli # uncmt this
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+#sudo mkdir /home/rsaf/data /home/rsaf/data/wp_files /home/rsaf/data/wp_database
 # sudo echo "127.0.0.1       rsaf.42.fr" > /etc/hosts
 echo -e "+******************************************************************************************************+\n"
 echo -e "*                                             Docker Setup                                             *\n"
