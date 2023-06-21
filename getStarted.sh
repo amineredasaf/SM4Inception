@@ -28,7 +28,7 @@ echo -e "${BYellow}"
 sudo apt-get -y update && echo -e "- ${BGreen}[OK] Updated${NC}"
 echo -e "${BYellow}"
 sudo apt-get -y upgrade && echo -e "- ${BGreen}[OK] Upgraded${NC}\n"
-sudo apt-get -y install zsh docker.io curl make vim git nodejs npm >> log.info
+sudo apt-get -y install zsh docker.io openssh-server url make vim git nodejs npm >> log.info
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 #> to install nestjs
 # npm i -g @nestjs/cli # uncmt this
@@ -48,7 +48,7 @@ sudo usermod -aG docker ${USER} && echo -e "- ${BGreen}[OK] ${USER} added To Doc
 # ***************************************************************************************************** #
 getent group docker > DockerGroupUsers.info && echo -e "- ${BGreen}[OK] Docker Group with Users Created${NC}"
 ip addr | grep "inet " > sshFile.info && echo -e "- ${BGreen}[OK] ip file created for SSH access${NC}"
-
+systemctl status ssh >> sshFile.info
 # ***************************************************************************************************** #
 echo -e "+******************************************************************************************************+\n"
 echo -e "*                                             Done/versions                                            *\n"
